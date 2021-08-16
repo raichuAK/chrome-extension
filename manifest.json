@@ -1,0 +1,31 @@
+{
+ "manifest_version": 3,
+ "name": "Save url",
+ "version": "1.0.0",
+ "description": "Save url to cloud",
+ "short_name": "cloud-save-url",
+ "permissions": ["activeTab", "scripting", "<all_urls>"],
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["background.js"]
+   }
+ ],
+ "action": {
+   "default_title": "Save current url to Cloud",
+   "default_popup": "popup.html",
+   "default_icon": {
+      "16": "save-button-key.jpg",
+      "32": "save-button-key.jpg",
+      "48": "save-button-key.jpg",
+      "128": "save-button-key.jpg"
+   }
+ },
+"icons": {
+  "16": "save-button-key.jpg",
+      "32": "save-button-key.jpg",
+      "48": "save-floppy.jpg",
+      "128": "save-button-key.jpg"
+}
+
+}
